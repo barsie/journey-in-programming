@@ -31,6 +31,7 @@ A repository that organizes learning paths, technology experiments, and capstone
 - `Capstone/Projects/` contains larger project work.
 - `Capstone/Submodules/` is reserved for linked repositories or nested project imports when needed.
 - Short, capitalized section names are used at the top level, and learning folders use a consistent PascalCase-style naming pattern.
+- `ProgrammingAssignments` is the intentional cross-topic exception within `Learning/` for coursework that spans more than one domain or technology.
 
 ## Technology mapping
 
