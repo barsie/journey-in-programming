@@ -25,6 +25,8 @@ A repository that organizes learning paths, technology experiments, and capstone
     └── Submodules/
 ```
 
+Local `.gitignore` files may be added inside learning or project folders when a specific workspace needs tool-specific artifact exclusions.
+
 ## Naming convention
 
 - `Learning/` contains domain-specific folders for practice, notes, and small experiments.
