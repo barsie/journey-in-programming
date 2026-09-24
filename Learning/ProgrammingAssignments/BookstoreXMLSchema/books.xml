@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="#embeddedXSLT"?>
+
+<!--
+  Embedded XSD (for reference only; browsers won't validate automatically)
+-->
+<!--
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="bookCatalog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="bookElement" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="bookTitle">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute name="publicationYear" type="xs:integer" use="required"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="bookAuthor">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="authorFirstName" type="xs:string"/>
+                    <xs:element name="authorLastName" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="bookDetails">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="publisher" type="xs:string"/>
+                    <xs:element name="pageCount" type="xs:integer"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="bookId" type="xs:string" use="required"/>
+            <xs:attribute name="isAvailable" type="xs:boolean" use="required"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+-->
+
+<bookCatalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+             xsi:noNamespaceSchemaLocation="catalog.xsd">
+
+  <!-- Book 1 -->
+  <bookElement bookId="B001" isAvailable="true">
+    <bookTitle publicationYear="1925">The Great Gatsby</bookTitle>
+    <bookAuthor>
+      <authorFirstName>F. Scott</authorFirstName>
+      <authorLastName>Fitzgerald</authorLastName>
+    </bookAuthor>
+    <bookDetails>
+      <publisher>Toronto Wills</publisher>
+      <pageCount>180</pageCount>
+    </bookDetails>
+  </bookElement>
+
+  <!-- Book 2 -->
+  <bookElement bookId="B002" isAvailable="false">
+    <bookTitle publicationYear="1949">Great Seam Book</bookTitle>
+    <bookAuthor>
+      <authorFirstName>George</authorFirstName>
+      <authorLastName>Torneveing</authorLastName>
+    </bookAuthor>
+    <bookDetails>
+      <publisher>Tirant Publication</publisher>
+      <pageCount>100</pageCount>
+    </bookDetails>
+  </bookElement>
+
+  <!-- Book 3 -->
+  <bookElement bookId="B003" isAvailable="true">
+    <bookTitle publicationYear="1949">Austing Torino</bookTitle>
+    <bookAuthor>
+      <authorFirstName>Vil</authorFirstName>
+      <authorLastName>Vinashinmoring</authorLastName>
+    </bookAuthor>
+    <bookDetails>
+      <publisher>Titntu</publisher>
+      <pageCount>1800</pageCount>
+    </bookDetails>
+  </bookElement>
+
+  <!-- Embedded XSLT for browser rendering -->
+  <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" id="embeddedXSLT">
+    <xsl:template match="/">
+      <html>
+        <head>
+          <title>Book Catalog</title>
+          <style>
+            body { font-family: Arial; padding: 1rem; }
+            ul { border: 1px solid #ccc; padding: 1rem; margin-bottom: 1rem; list-style-type: none; }
+            li { margin: 0.25rem 0; }
+            .available { color: green; }
+            .unavailable { color: red; }
+          </style>
+        </head>
+        <body>
+          <h2>Book Inventory</h2>
+          <xsl:for-each select="bookCatalog/bookElement">
+            <ul>
+              <h3><xsl:value-of select="bookTitle"/></h3>
+              <li>Author: <xsl:value-of select="bookAuthor/authorFirstName"/> <xsl:value-of select="bookAuthor/authorLastName"/></li>
+              <li>Publication Year: <xsl:value-of select="bookTitle/@publicationYear"/></li>
+              <li>Publisher: <xsl:value-of select="bookDetails/publisher"/></li>
+              <li>Page Count: <xsl:value-of select="bookDetails/pageCount"/></li>
+              <li>
+                Available: 
+                <span class="{@isAvailable='true' ? 'available' : 'unavailable'}">
+                  <xsl:choose>
+                    <xsl:when test="@isAvailable='true'">Yes</xsl:when>
+                    <xsl:otherwise>No</xsl:otherwise>
+                  </xsl:choose>
+                </span>
+              </li>
+            </ul>
+          </xsl:for-each>
+        </body>
+      </html>
+    </xsl:template>
+  </xsl:stylesheet>
+
+</bookCatalog>
