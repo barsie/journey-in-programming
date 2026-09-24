@@ -11,7 +11,7 @@ A repository that organizes learning paths, technology experiments, and capstone
 │   ├── CodingJava/
 │   ├── CodingPython/
 │   ├── CodingTypeScript/
-│   ├── DBA/
+│   ├── Databases/
 │   ├── DSA/
 │   ├── MachineLearning/
 │   ├── NetworkAnalysis/
@@ -44,6 +44,6 @@ A repository that organizes learning paths, technology experiments, and capstone
 - Data structures and algorithms: `Learning/DSA`
 - Machine learning experiments: `Learning/MachineLearning`
 - Network analysis work: `Learning/NetworkAnalysis`
-- SQL and NoSQL: `Learning/DBA`
+- SQL and NoSQL: `Learning/Databases`
 - R and statistics work: `Learning/StatisticalAnalysis`
-- Cross-topic coursework and mixed assignments: `Learning/ProgrammingAssignments`; keep technology-specific JSON, sample data, and configuration files in their corresponding learning folder or capstone project.
+- Cross-topic coursework and mixed assignments: keep assignment code, JSON, sample data, and configuration files together in `Learning/ProgrammingAssignments`; use the technology-specific learning folder or capstone project only when the work is not part of a shared assignment.
