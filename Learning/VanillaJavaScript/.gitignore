@@ -1,0 +1,4 @@
+# JavaScript workspace artifacts
+node_modules/
+dist/
+coverage/

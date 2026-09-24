@@ -1,0 +1,4 @@
+# R workspace artifacts
+.Rhistory
+.RData
+.Rproj.user/
