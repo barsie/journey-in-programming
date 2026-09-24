@@ -46,4 +46,4 @@ A repository that organizes learning paths, technology experiments, and capstone
 - Network analysis work: `Learning/NetworkAnalysis`
 - SQL and NoSQL: `Learning/Databases`
 - R and statistics work: `Learning/StatisticalAnalysis`
-- Cross-topic coursework and mixed assignments: keep assignment code, JSON, sample data, and configuration files together in `Learning/ProgrammingAssignments`; use the technology-specific learning folder or capstone project only when the work is not part of a shared assignment.
+- Cross-topic coursework and mixed assignments: keep assignment code, JSON, sample data, and configuration files together in `Learning/ProgrammingAssignments`; use the technology-specific learning folder or `Capstone/Projects/` only when the work is not part of a shared assignment.
