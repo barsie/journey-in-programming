@@ -49,4 +49,9 @@ Local `.gitignore` files may be added inside learning or project folders when a 
 - Network analysis work: `Learning/NetworkAnalysis`
 - SQL and NoSQL: `Learning/Databases`
 - R and statistics work: `Learning/StatisticalAnalysis`
-- Cross-topic coursework and mixed assignments: keep assignment code, JSON, sample data, and configuration files together in `Learning/ProgrammingAssignments`. A shared assignment is a single coursework deliverable that intentionally spans multiple technologies or topics; single-topic exercises should stay in their corresponding learning folder, project deliverables should live in `Capstone/Projects/`, and linked repositories or nested imports should go in `Capstone/Submodules/`.
+- Cross-topic coursework and mixed assignments: `Learning/ProgrammingAssignments`
+  - A shared assignment is a single coursework deliverable that intentionally spans multiple technologies or topics.
+  - Keep assignment code, JSON, sample data, and configuration files together with that assignment.
+  - Single-topic exercises should stay in their corresponding learning folder.
+  - Project deliverables should live in `Capstone/Projects/`.
+  - Linked repositories or nested imports should go in `Capstone/Submodules/`.
