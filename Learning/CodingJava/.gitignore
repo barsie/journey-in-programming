@@ -1,0 +1,6 @@
+# Java build output
+*.class
+.gradle/
+build/
+out/
+target/

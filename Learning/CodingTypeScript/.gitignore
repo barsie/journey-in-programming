@@ -1,0 +1,5 @@
+# TypeScript / Node workspace artifacts
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
