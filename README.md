@@ -1,6 +1,4 @@
-# journey-in-programming
-
-Learning and capstone repository scaffold.
+# Learning and Capstone Scaffold for journey-in-programming
 
 A repository that organizes learning paths, technology experiments, and capstone work in one place.
 
@@ -43,6 +41,9 @@ A repository that organizes learning paths, technology experiments, and capstone
 - React: `Learning/React`
 - Shell: `Learning/ShellScripting`
 - Azure and cloud exercises: `Learning/CodingAzure`
+- Data structures and algorithms: `Learning/DSA`
+- Machine learning experiments: `Learning/MachineLearning`
+- Network analysis work: `Learning/NetworkAnalysis`
 - SQL and NoSQL: `Learning/DBA`
 - R and statistics work: `Learning/StatisticalAnalysis`
 - JSON, data files, and mixed assignments: use `Learning/ProgrammingAssignments` for exercises, samples, and coursework; use the relevant `Capstone/Projects/` folder when the files belong to a project deliverable.
