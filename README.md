@@ -40,6 +40,7 @@ A repository that organizes learning paths, technology experiments, and capstone
 - JavaScript: `Learning/VanillaJavaScript`
 - React: `Learning/React`
 - Shell: `Learning/ShellScripting`
+- Azure and cloud exercises: `Learning/CodingAzure`
 - SQL and NoSQL: `Learning/DBA`
 - R and statistics work: `Learning/StatisticalAnalysis`
 - JSON, data files, and mixed assignments: `Learning/ProgrammingAssignments` or the relevant capstone project folder
