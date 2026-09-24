@@ -32,7 +32,7 @@ A repository that organizes learning paths, technology experiments, and capstone
 - `Learning/` contains domain-specific folders for practice, notes, and small experiments.
 - `Capstone/Projects/` contains larger project work.
 - `Capstone/Submodules/` is reserved for linked repositories or nested project imports when needed.
-- PascalCase folder names are used for consistency.
+- Short, capitalized section names are used at the top level, and learning folders use a consistent PascalCase-style naming pattern.
 
 ## Technology mapping
 
@@ -45,4 +45,4 @@ A repository that organizes learning paths, technology experiments, and capstone
 - Azure and cloud exercises: `Learning/CodingAzure`
 - SQL and NoSQL: `Learning/DBA`
 - R and statistics work: `Learning/StatisticalAnalysis`
-- JSON, data files, and mixed assignments: `Learning/ProgrammingAssignments` or the relevant capstone project folder
+- JSON, data files, and mixed assignments: use `Learning/ProgrammingAssignments` for exercises, samples, and coursework; use the relevant `Capstone/Projects/` folder when the files belong to a project deliverable.
