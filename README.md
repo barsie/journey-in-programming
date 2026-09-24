@@ -1,5 +1,7 @@
 # journey-in-programming
 
+Learning and capstone repository scaffold.
+
 A repository that organizes learning paths, technology experiments, and capstone work in one place.
 
 ## Folder structure
