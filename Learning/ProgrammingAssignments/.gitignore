@@ -1,0 +1,17 @@
+# Mixed assignment workspace artifacts
+node_modules/
+dist/
+build/
+coverage/
+.next/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.class
+.gradle/
+out/
+target/
+.Rhistory
+.RData
+.Rproj.user/
